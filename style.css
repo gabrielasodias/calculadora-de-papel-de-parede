@@ -64,7 +64,7 @@ main {
 }
 
 main::before {
-    content: "🧻📏";
+    content: "📏";
     font-size: 2rem;
     position: absolute;
     top: -25px;
