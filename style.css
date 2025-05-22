@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/lined-paper.png');
+    background-color: #ffe6e6;
+    color: #333;
+    padding: 20px;
+}
+
+
+header {
+    background-color: #f78fb3;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-image: linear-gradient(145deg, #fad0c4 0%, #ffd1ff 100%);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6b81;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: #ff4757;
+    transform: rotate(-2deg) scale(1.1);
+}
+
+main {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #fffaf0;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 3px dashed #f78fb3;
+    position: relative;
+}
+
+main::before {
+    content: "🧻📏";
+    font-size: 2rem;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #6c5ce7;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ffeaa7;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #fab1a0;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #55efc4;
+    color: #2d3436;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #00b894;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #636e72;
+}
+
+footer a {
+    color: #d63031;
+    text-decoration: none;
+    font-weight: bold;
+}
