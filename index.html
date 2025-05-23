@@ -19,20 +19,40 @@
     <main>
         <form>
             <label for="largura-parede">Largura da parede</label>
-            <input type="number" name="largura-parede" id="largura-parede" placeholder="Digite a largura em metros">
+            <input type="number" name="largura-parede" id="largura-parede" placeholder="Digite a largura em metros" step="0.01">
+
             <label for="altura-parede">Altura da parede</label>
-            <input type="number" name="altura-parede" id="altura-parede" placeholder="Digite a altura em metros">
+            <input type="number" name="altura-parede" id="altura-parede" placeholder="Digite a altura em metros" step="0.01">
+
             <label for="altura-rolo">Altura do rolo</label>
-            <input type="number" name="altura-rolo" id="altura-rolo" placeholder="Digite a altura do rolo em metros">
+            <input type="number" name="altura-rolo" id="altura-rolo" placeholder="Digite a altura do rolo em metros" step="0.01">
+
             <label for="largura-rolo">Largura do rolo</label>
-            <input type="number" name="largura-rolo" id="largura-rolo" placeholder="Digite a largura do rolo em metros">
+            <input type="number" name="largura-rolo" id="largura-rolo" placeholder="Digite a largura do rolo em metros" step="0.01">
+
+            <label for="repete">O papel tem repetição de desenho?</label>
+            <select id="repete">
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+            </select>
+
+            <div id="campo-repeticao" style="display:none;">
+                <label for="repeticao">Altura do padrão de repetição (em metros)</label>
+                <input type="number" id="repeticao" step="0.01" placeholder="Ex: 0,64">
+            </div>
+
             <button type="submit">Calcular</button>
         </form>
-        <script src="script.js"></script>
+
+        <div id="resultado" class="resultado" style="display: none;">
+            <p>Você vai precisar de <strong><span id="quantidade"></span></strong> rolo(s) de papel de parede!</p>
+        </div>        
     </main>
     
     <footer>
         <p>Desenvolvido por <a href="https://github.com/gabrielasodias" target="_blank">Gabriela Dias</a></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

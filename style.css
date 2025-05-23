@@ -96,6 +96,29 @@ input:focus {
     outline: none;
 }
 
+select {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: 2px dashed #7c4dff;
+    border-radius: 10px;
+    background-color: #f8f8ff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ff9800;
+    background-color: #fff8e1;
+    box-shadow: 0 0 10px #ff9800;
+}
+
 button {
     padding: 15px;
     background-color: #55efc4;
@@ -126,3 +149,29 @@ footer a {
     text-decoration: none;
     font-weight: bold;
 }
+
+.resultado {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffeaa7;
+    border: 2px dashed #fd79a8;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    color: #2d3436;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: aparecer 0.5s ease-in-out forwards;
+    display: none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
